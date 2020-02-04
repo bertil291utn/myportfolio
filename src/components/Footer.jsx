@@ -13,7 +13,7 @@ const FooterA = styled.a`
 const Footer = () => {
     return (
         <div className="Footer">
-            <FooterP>Made always with ❤ by<FooterA href="https://garajesoft.com" target="_blank"> GarajeSoft ©</FooterA>
+            <FooterP>Made always with ❤ by <FooterA href="https://garajesoft.com" target="_blank"> GarajeSoft ©</FooterA>
             </FooterP>
         </div>
     );
