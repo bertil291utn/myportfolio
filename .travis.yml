@@ -13,7 +13,7 @@ deploy:
   provider: pages
   skip-cleanup: true
   keep-history: true
-  github_token: $GITHUB_TOKEN
+  github_token: $github_token
   local-dir: dist/
   target-branch: master
   commit_message: "bertilt4@gmail.com Deploy release ${TRAVIS_TAG}"
