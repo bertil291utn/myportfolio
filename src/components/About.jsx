@@ -59,7 +59,7 @@ const About = ({ avatar, name, profession, bio, address, social }) => (
         <div className="About-container">
             <AboutAvatar>
                 <figure>
-                    <AboutImg src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2014/03/1-medium-layered-haircut-for-square-face.jpg" alt={name} />
+                    <AboutImg src={avatar} alt={name} />
                 </figure>
             </AboutAvatar>
             <AboutName>

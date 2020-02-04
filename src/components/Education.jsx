@@ -12,8 +12,8 @@ const Education = props => {
                 {
                     props.data.map((edu, i) => (
                         <div className="Education-item" key={`Edu-${i}`}>
-                            <H3Styled>{edu.degree}, {edu.institution}</H3Styled>
-                            <h4>{edu.startDate} - {edu.endDate}</h4>
+                            <H3Styled>{edu.degree}, {edu.institution}, {edu.startDate} - {edu.endDate}</H3Styled>
+                            {/* <h4>{edu.startDate} - {edu.endDate}</h4> */}
                             <PStyled name={edu.description} />
                         </div>
                     ))

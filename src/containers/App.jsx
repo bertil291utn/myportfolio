@@ -7,8 +7,10 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
 import Certificates from '../components/Certificates';
+
 import useGetData from '../hooks/useGetData';
 import { createGlobalStyle } from 'styled-components';
+import H2Styled from '../styles/H2Styled';
 
 const GlobalStyle = createGlobalStyle`
     body{
@@ -23,7 +25,7 @@ const App = () => {
     const data = useGetData();
     //console.log(data);
     //pasar mediante nombres a cada tag los valores que trae data desde la api rest 
-    return data.length == 0 ? <h1>Cargando...</h1> : (
+    return data.length == 0 ? <H2Styled name="Loading ..." /> : (
         <Main>
             <GlobalStyle />
             <Slidebar>
@@ -47,6 +49,7 @@ const App = () => {
                     data={data.skills} />
             </Info>
         </Main>
+        
     );
 }
 

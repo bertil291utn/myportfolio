@@ -40,6 +40,10 @@ const getColor = (name) => {
             return { color: '#0e76a8' };
         case 'github':
             return { color: '#333' };
+        case 'spotify':
+            return { color: '#1DB954' };
+        case 'at':
+            return { color: 'default' };
         default:
             return { color: '#000000' };
     }
@@ -59,7 +63,7 @@ const Social = props => {
                                 <SocialLi key={`social-${i}`} >
                                     <SocialAnchor href={resp.url} target="_blank">
                                         <ThemeProvider theme={getColor(resp.name)}>
-                                            <SocialIcon className={`fab fa-${resp.name}`} />
+                                            <SocialIcon className={`fa${resp.name == 'envelope' ? 'r' : 'b'} fa-${resp.name}`} />
                                         </ThemeProvider>
                                     </SocialAnchor>
                                 </SocialLi>

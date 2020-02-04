@@ -12,8 +12,8 @@ const Experience = props => {
                 {
                     props.data.map((resp, i) => (
                         <div className="Experience-item" key={`Exp-${i}`}>
-                            <H3Styled>{resp.jobTitle}, {resp.company}</H3Styled>
-                            <h4>{resp.startDate} - {resp.endDate}</h4>
+                            <H3Styled>{resp.jobTitle}, {resp.company}, {resp.startDate} - {resp.endDate}</H3Styled>
+                            {/* <h4>{resp.startDate} - {resp.endDate}</h4> */}
                             <PStyled name={resp.jobDescription}/>
                         </div>
                     ))

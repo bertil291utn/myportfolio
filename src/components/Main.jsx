@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Footer from '../components/Footer';
 
 const MainStyled = styled.div`
     display:grid;
@@ -26,6 +27,7 @@ const Main = ({ children }) => (//sfc   cuando es un return implicito no necesit
         <MainContainer>
             {children}
         </MainContainer>
+        <Footer />
     </MainStyled>
 );
 
